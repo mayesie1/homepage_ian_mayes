@@ -1,0 +1,105 @@
+/*
+    Color scheme:
+    #000080  - navy blue
+    #F5F5DC  - beige
+    #DCDCDC  - gainsboro
+    #ae0000  - dark red
+*/
+
+
+/* Set up background with a background from Subtle Patterns, and the font
+** via Google Fonts */
+body {
+    font-family: 'Raleway', sans-serif;
+    background: url('../felt.png');
+}
+
+
+/* Sidepanel w/ background image.  */
+.side_panel {
+    background: url('../hw1_background.png') repeat top right;
+    min-height: 100vh;
+}
+
+/* Cosmetic improvements to name & headers */
+h1,
+h2,
+h3 {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-size: 40pt;
+    font-weight: 100;
+}
+
+/* Set up main content to the right */
+.left_panel {
+    background: #DCDCDC;
+}
+
+/* Gradient from: https://uigradients.com/ */
+.blog_post {
+    background: #ffeeee; 
+    background: -webkit-linear-gradient(to left, #eee, #F5F5DC); 
+    background: linear-gradient(to left, #eee, #F5F5DC); 
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.personal_bio {
+    background: #ffeeee; 
+    background: -webkit-linear-gradient(to left, #eee, #F5F5DC); 
+    background: linear-gradient(to left, #eee, #F5F5DC); 
+    background-color: #F5F5DC;
+    font-size: 14pt;
+    padding: 20px;
+    margin: 20px;
+    text-align: justify;
+}
+
+.resume {
+    background: #ffeeee; 
+    background: -webkit-linear-gradient(to left, #eee, #F5F5DC); 
+    background: linear-gradient(to left, #eee, #F5F5DC); 
+    background-color: #F5F5DC;
+    font-size: 12pt;
+    padding: 20px;
+    margin: 20px;
+    text-align: justify;
+}
+
+/* Add color to Bootstrap buttons */
+.blue_buttons {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.btn-blue {
+    background: #000080;
+    color: #F5F5DC;
+}
+
+.btn-blue:hover {
+    color: green;
+}
+
+/* Add color to Bootstrap nav-links buttons */
+.blue-nav {
+    padding-top: 20px;
+}
+
+.blue-nav .nav-link {
+    color: #000080;
+    font-size: 24pt;
+    text-transform: lowercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+}
+
+.blue-nav a.nav-link.active {
+    background: #000080;
+    color: #F5F5DC;
+    border-radius: 20px;
+}
+
