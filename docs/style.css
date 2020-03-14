@@ -11,13 +11,13 @@
 ** via Google Fonts */
 body {
     font-family: 'Raleway', sans-serif;
-    background: url('../felt.png');
+    background: url('./felt.png');
 }
 
 
 /* Sidepanel w/ background image.  */
 .side_panel {
-    background: url('../hw1_background.png') repeat top right;
+    background: url('./hw1_background.png') repeat top right;
     min-height: 100vh;
 }
 
