@@ -1,12 +1,3 @@
-# homepage_ian_mayes
-# Run one of the following scripts to generate web pages:
-
-1) build.sh script:
-cat templates/blog_top.html content/blog_index.html templates/blog_bottom.html > docs/index.html
-cat templates/resume_top.html content/resume_index.html templates/resume_bottom.html > docs/hw1_projects_page.html
-cat templates/about_top.html content/about_index.html templates/about_bottom.html > docs/hw1_about_page.html
-
-2) build.py script:
 # Create variables to represent each file used-to form index.html
 blog_top = open('./templates/blog_top.html').read()
 blog_index = open('./content/blog_index.html').read()
