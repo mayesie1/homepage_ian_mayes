@@ -1,30 +1,27 @@
-# homepage_ian_mayes
-# Run one of the following scripts to generate web pages:
+1) build_phase1.py script (HW3, Phase1): Simple python script that performs the following:
+	- Opens and reads template and content files
+	- Concatenates and writes template and content files to output files that are created
+	- Script contents are defined under function 'main'
 
-1) build.sh script:
-cat templates/top.html content/blog_index.html templates/bottom.html > docs/index.html
-cat templates/top.html content/resume_index.html templates/bottom.html > docs/resume.html
-cat templates/top.html content/about_index.html templates/bottom.html > docs/about.html
 
-2) build.py script:
-# Create variables to represent each template file
-top = open('./templates/top.html').read()
-bottom = open('./templates/bottom.html').read()
+2) build_phase2.py script (HW3, Phase2): Builds-from the script in HW3, Phase1
+	- A list of dictionaries named 'pages' is created to represent template, content, and output files
+	- A for loop is defined under function 'main' to loop through 'pages' to perform open / read / concatenation / write operations
 
-# Create variables to represent each file used-to form index.html
-blog_index = open('./content/blog_index.html').read()
 
-# Concatenate the 3 blog files together and write to index.html
-open('./docs/index.html', 'w+').write(top + blog_index + bottom)
+3) build_phase3.py script (HW3, Phase3): Builds-from the script in HW3, Phase2
+	- Combined template files into 'base.html'
+	- Added html placeholder in 'base.html' to represent content to be added
+	- Added step in for loop to replace html placeholders with data from content files
 
-# Create variable to represent each file used-to form resume.html
-resume_index = open('./content/resume_index.html').read()
 
-# Concatenate the 3 resume files together and write to resume.html
-open('./docs/resume.html', 'w+').write(top + resume_index + bottom)
+4) build_phase4.py script (HW3, Phase4): Builds-from the script in HW3, Phase3
+	- Function 'main' is split-into (3) separate functions
 
-# Create variables to represent each file used-to form about.html
-about_index = open('./content/about_index.html').read()
 
-# Concatenate the 3 about files together and write to about.html
-open('./docs/about.html', 'w+').write(top + about_index + bottom)
+5) build_phase5.py script (HW3, Phase5): Builds-from the script in HW3, Phase4
+	- Added additional key:value pairs to 'pages' that represent titles and active link files for each webpage
+	- Added html placeholders in 'base.html' to represent titles and active link to each webpage
+
+
+6) build.py script: Final script; same-as build_phase5.py script (HW3, Phase5)
